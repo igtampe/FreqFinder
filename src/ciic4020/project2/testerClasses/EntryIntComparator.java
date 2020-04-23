@@ -8,7 +8,6 @@ public class EntryIntComparator implements
 
 	@Override
 	public int compare(Entry<Integer, Integer> o1, Entry<Integer, Integer> o2) {
-		// TODO Auto-generated method stub
 		return o1.getKey().compareTo(o2.getKey());
 	}
 	
