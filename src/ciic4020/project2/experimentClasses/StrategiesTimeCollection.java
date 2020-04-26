@@ -32,28 +32,16 @@ extends ArrayList<Map.Entry<Integer, Float>> {
     // to determine the average execution time for a particular 
     // size.....
     
-    public StrategiesTimeCollection(AbstractStrategyToTest<E> strategy) { 
-        this.strategy = strategy; 
-    } 
+    public StrategiesTimeCollection(AbstractStrategyToTest<E> strategy) {this.strategy = strategy;} 
     
-    public String getStrategyName() { 
-        return strategy.getName(); 
-    }
+    public String getStrategyName() {return strategy.getName();}
     
-    public void runTrial(ArrayList<E> dataSet) { 
-    	strategy.experimentallyExecuteStrategy(dataSet);
-    }
+    public void runTrial(ArrayList<E> dataSet) {strategy.experimentallyExecuteStrategy(dataSet);}
     
-    public void resetSum() { 
-    	sum = 0.0f; 
-    }
+    public void resetSum() {sum = 0.0f;}
     
-    public void incSum(float t) { 
-    	sum += t; 
-    }
+    public void incSum(float t) {sum += t;}
     
-    public float getSum() { 
-    	return sum; 
-    }
+    public float getSum() {return sum;}
     
 }

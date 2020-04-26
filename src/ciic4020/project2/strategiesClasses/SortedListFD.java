@@ -86,8 +86,9 @@ public class SortedListFD<E extends Comparable<E>> extends AbstractFDStrategy<E>
 		}		
 		
 		//Lastly, (Even though this is the first bit of code we added) copy everything from sordtedlist to results
-		//Oh no, this arraylist is not itterable. Oopsie poopsie.
+		//Oh no, this arraylist is not itterable. Oopsie woopsie.
 			
+		//Since ComparableEntry extends AbstractMap.SimpleEntry, it's ok to do this.
 		for (int i = 0; i < sortedlist.size(); i++) {results.add(sortedlist.get(i));}
 
 		return results;
