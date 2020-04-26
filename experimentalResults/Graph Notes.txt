@@ -1,0 +1,4 @@
+
+Despite running this experiment multiple times, I can't understand why the beginning of the graph looks so messy. Perhaps the additional setup of of the map or ordering of the sets takes more time than it saves when compared to direct access. Perhaps also it could be a better dataset, though the fact that this happens consistently is rather odd. Regardless, as the size of the data set increases, we can see a noticeable, and sensible pattern.
+
+Sorted list, despite seeming like it would be faster due to less access, is actually slower. This is likely due to the fact that we must copy the list back to result, rather than saving it back.
