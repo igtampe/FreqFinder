@@ -9,7 +9,8 @@ public class SortedListTester1 {
 	public static void main(String[] args) {
 		
 		System.out.println("Testing Map strategy"); 
-		ArrayList<Integer> data = TestingUtils.generateListOfIntegers(5000); 
+		ArrayList<Integer> data = TestingUtils.generateListOfIntegers(20);
+		//I changed this to make it a bit more human readable/testable
 		
 		TestingUtils.displayListElements("Original Data", data);
 		
