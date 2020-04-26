@@ -9,7 +9,7 @@ public class MapTester1 {
 	public static void main(String[] args) {
 		
 		System.out.println("Testing Map strategy"); 
-		ArrayList<Integer> data = TestingUtils.generateListOfIntegers(5000); 
+		ArrayList<Integer> data = TestingUtils.generateListOfIntegers(5); 
 		
 		TestingUtils.displayListElements("Original Data", data);
 		
